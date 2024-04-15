@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex items-center justify-between w-full h-screen relative overflow-hidden">
-      <div className="flex justify-center items-center w-full  z-10 px-[20px] mt-[65px] md:mt-[88px]">
+      <div className="flex justify-center items-center w-full  z-10 px-[20px] mt-[65px] md:mt-[89px]">
         <div className="flex flex-col items-center justify-between p-[20px] rounded-[12px] text-white bg-[#000000cc] w-[52rem]">
           <h1 className="text-[29px] md:text-[32px] font-bold leading-[50px] my-4 md:my-8">
             Sugandra
