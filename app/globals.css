@@ -33,7 +33,7 @@ body {
 }
 
 .height {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 130px);
 }
 @media (min-width: 600px) {
   .height {
@@ -42,7 +42,7 @@ body {
 }
 
 .patners-height {
-  height: calc(100vh - 68px);
+  height: calc(100vh - 120px);
 }
 @media (min-width: 600px) {
   .patners-height {
