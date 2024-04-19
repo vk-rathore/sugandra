@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/Sugandhrafavcon.png" sizes="auto" />
+        <link rel="icon" href="/Sugandrafavcon.png" sizes="auto" />
       </head>
       <body className={inter.className}>
         <Navbar />

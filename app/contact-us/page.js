@@ -1,7 +1,7 @@
 "use client";
 import styles from "@/styles/home.module.css";
 import { useEffect, useState } from "react";
-import { Bars } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 const ContactUs = () => {
   const [loading, setLoading] = useState(true);
   const [src, setSrc] = useState("");
@@ -18,17 +18,20 @@ const ContactUs = () => {
   return (
     <main className="flex items-center justify-between w-full h-screen relative overflow-hidden ">
       <div className="flex justify-center w-full z-10 px-[10px] md:px-[20px] mt-[65px] md:mt-[88px]">
-        <div className="flex flex-col items-center justify-between p-[5px] md:p-[20px] rounded-[12px] text-white bg-[#000000cc] w-full  md:w-[40rem] lg:w-[52rem]">
+        <div className="flex flex-col h- items-center justify-between p-[5px] md:p-[20px] rounded-[12px] text-white bg-[#000000cc] w-full  md:w-[40rem] lg:w-[52rem]">
           {loading ? (
-            <Bars
-              height="80"
-              width="80"
-              color="#f38321"
-              ariaLabel="bars-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            />
+            <div className="height flex items-center">
+              <ThreeDots
+                visible={true}
+                height="80"
+                width="80"
+                color="#f38321"
+                radius="9"
+                ariaLabel="three-dots-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+              />
+            </div>
           ) : null}
           <iframe
             className={

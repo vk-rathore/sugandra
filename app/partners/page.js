@@ -1,7 +1,7 @@
 "use client";
 import styles from "@/styles/home.module.css";
 import { useEffect, useState } from "react";
-import { Bars } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 const Patners = () => {
   const [loading, setLoading] = useState(true);
   const [src, setSrc] = useState("");
@@ -19,20 +19,23 @@ const Patners = () => {
         <div
           className={
             loading
-              ? "flex flex-col items-center justify-between p-[5px] md:p-[20px] rounded-[12px] text-white bg-[#000000cc] w-full  md:w-[40rem] lg:w-[52rem]"
+              ? "flex flex-col items-center justify-between p-[5px] md:p-[20px] rounded-[12px] text-white bg-[#000000cc] w-full  md:w-[40rem] lg:w-[52rem] patners-height"
               : "flex flex-col md:flex-col items-center justify-between p-[10px] md:p-[20px] rounded-[12px] text-white bg-[#000000cc] w-full md:w-[40rem] lg:w-[52rem] patners-height"
           }
         >
           {loading ? (
-            <Bars
-              height="80"
-              width="80"
-              color="#f38321"
-              ariaLabel="bars-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            />
+            <div className=" h-full flex items-center">
+              <ThreeDots
+                visible={true}
+                height="80"
+                width="80"
+                color="#f38321"
+                radius="9"
+                ariaLabel="three-dots-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+              />
+            </div>
           ) : (
             <div>
               <h1 className="text-[25px] text-center md:text-[32px] font-bold md:leading-[50px] my-1 md:my-2">

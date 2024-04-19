@@ -9,10 +9,10 @@ const Navbar = () => {
         <Link className=" block w-fit" href="/">
           <img
             className="cursor-pointer w-[111px] h-[48px] md:w-[147px] md:h-[55px]"
-            src="/Sugandhra.png"
+            src="/Sugandra.png"
             // width={150}
             // height={150}
-            alt="Sungndhara Logo"
+            alt="Sugandra Logo"
           />
         </Link>
       </div>
